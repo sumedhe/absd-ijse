@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+#abc{
+	
+	right: 0px;
+	height: 250px;
+	margin-left: 150px;
+	background-color: aqua;
+}
+
+#d2{
+	position: relative;
+	background-color: #E4F90B;
+	height: 250px;
+}
+
+#d3{
+	position: absolute;
+	background-color: #F51B1E;
+	height: 100px;
+	width: 100px;
+	margin-left: 100px;
+	margin-bottom: 0px;
+}

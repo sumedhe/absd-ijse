@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> Welcome </title>
+    </head>
+    
+    <body>
+        <form method="post" enctype="multipart/form-data" action="">
+            <p>
+                <label> Name <input type="text" placeholder="Enter your name"  name="txtName" value="" /> </label> <br>
+                <label> Password <input type="password" disabled name="txtPassword" value="123"/> </label> <br>
+                <label> Combo Box
+                    <select name="cmb">
+                        <option value="item1"> OP 1</option>
+                        <option value="item2" selected> OP 2</option>
+                        <option value="item3"> OP 3</option>
+                    </select>
+                </label><br>
+                <label> Address
+                    <textarea rows="2" cols="10"> </textarea>
+                </label> <br>
+                <!--<lable> Gender: </lable>-->
+                <fieldset>
+                    <legend>Gender</legend>
+                
+                    <label> Female <input type="radio" name="gen" checked/> </label>
+                    <label> Male <input type="radio" name="gen"/> </label> <br>
+                </fieldset>
+                
+                <!--
+                <label> Check <input type="checkbox"/> </label> <br>
+                <label> Button <input type="button"/> </label> <br>
+                <label> Submit <input type="submit"/> </label> <br>
+                <label> Reset <input type="reset"/> </label> <br>
+                <label> Tel <input type="tel"/> </label> <br>
+                <label> Email <input type="email"/> </label> <br>
+                <label> Color <input type="color"/> </label> <br>
+                <label> Search <input type="search"/> </label> <br>
+                <label> File <input type="file"/> </label> <br>
+                <label> Hidden <input type="hidden"/> </label> <br>-->
+                <label> Range <input type="range" min="0" max="40" step="5"/> </label> <br>
+                <label> Number <input type="number"/> </label> <br>
+            </p>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul {
+/*	list-style-image: url(../_images/me.png);*/
+}
+
+ul p{
+	color: aqua;
+}
+
+ul ul p{
+	color: brown;
+}
+
+ul ul mark{
+	color: #409C9B;
+}
+
+ul>li:first-child{
+	color: #FF0004;
+}
+
+ul>li:last-child{
+	color: #B0F710;
+}
+
+ul>li:nth-child(3)>ul>li:nth-child(2){
+	color: #FBB60B;
+}
+
+ul#abc{
+	color: #D119DC;
+}

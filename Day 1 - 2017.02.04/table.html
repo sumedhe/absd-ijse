@@ -1,0 +1,77 @@
+<!--
+<html>
+    <head>
+        <title> Welcome </title>
+        <link rel="stylesheet" type="text/css" href="_css/style1.css">
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <th> Name </th>
+                <th> Age </th>
+            </tr>
+            <tr>
+                <td> Name2 </td>
+                <td> Age2 </td>
+            </tr>
+        </table>
+    </body>
+
+</html>
+-->
+
+<html>
+    <head>
+        <title> Welcome </title>
+        <link rel="stylesheet" type="text/css" href="_css/style1.css">
+    </head>
+    
+    <body>
+        <table>
+            <caption> Marks </caption> <!-- The first tab after table tab. -->
+            <colgroup>
+            
+                <col span = "2" class = "rowc1"> </col>
+            <col class = "rowc2"> </col>
+            </colgroup>
+                 
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Age </th>
+                    <th> Subject </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class = "r1">
+                    <td> Name1 </td>
+                    <td colspan="2"> Age1  </td>
+                    <!-- <td> Sub1 </td> -->
+                </tr>
+                <tr class="r2">
+                    <td> Name2 </td>
+                    <td> Age2 </td>
+                    <td> Sub2 </td>
+                </tr>
+                <tr class="r1">
+                    <td rowspan="2"> Name3 </td>
+                    <td> Age3 </td>
+                    <td> Sub3 </td>
+                </tr>
+                <tr class="r2">
+                    <!-- <td> Name4 </td> -->
+                    <td> Age4 </td>
+                    <td> Sub4 </td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="3"> total </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+
+</html>

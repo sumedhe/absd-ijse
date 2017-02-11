@@ -1,0 +1,92 @@
+Lists_____________________________________________
+
+HTML list types
+	1.Ordered lists			<ol>	<li>				or <script>
+	2.Unordered lists		<ul>	<li>				or <script>
+	3.Descriptions lists	<dl>	<dt> and <dd>		or <div>
+
+
+<ol>
+	start
+	reversed
+	type
+	<li>
+		value
+
+
+Selectors__________________________________________
+
+* 	Universal selector
+: 	Type selector
+
+# 	id
+. 	Class
+
+> 	Child selector
+  	Decendant selector
+
+
+
+ul p   - All the p inside ul
+ul > p - p that is directly inside p
+But p cannot be inside ul. THerefore this should be ul > li > p
+
+
+Pseudo classes
+
+:first-child
+:last-child
+:nth-child(child number)
+
+
+****Baby on board app
+
+
+Sibling selectors
++ 	Adjacent selector
+~ 	General selector
+
+
+
+When defining attributes they are usually prefixed with data-
+eg: data-abc
+
+Attribute selector
+[data-abc]{
+	color:#fff;
+}
+
+or can even use attribute selectors with value
+[data-abc="xyz"]{
+	color:#4554;
+}
+
+
+
+CSS Layouts________________________________________________________________________________
+
+Main topics
+	1.Box model
+	2.Positioning
+
+Any element is boxed
+
+Margin box
+	Border box
+		Padding box
+			(Content + width + height)
+
+
+Margin - used to adjust space between elements
+Padding or width/height - Used to adject width or height of an element
+
+
+Block element - Make a new line for the block element with maximum width and wrapped height
+Inline element - Doesn't go to a new line. No (Top and bottom) margin + border + padding
+
+
+Position
+	Static
+	Relative
+	Absolute
+	Fixed
