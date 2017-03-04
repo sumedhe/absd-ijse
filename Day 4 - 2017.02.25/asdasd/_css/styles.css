@@ -1,0 +1,266 @@
+ 
+/*
+*{
+    box-sizing: border-box;
+}
+*/
+/*
+h1{
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+q{
+    color: crimson;
+}
+
+.para{
+    background-color: aqua;
+}
+
+#div1{
+    background-color: lightcoral;
+    width: 200px;
+    height: 250px;
+}
+
+#d1{
+    background-color: aqua;
+    height: 200px;
+    
+}
+
+#d2{
+    background-color: crimson;
+    width: 33%;
+    height: 500px;
+    display: inline-block;
+}
+
+#d3{
+    background-color: coral;
+    width: 33%;
+    height: 500px;
+    display: inline-block;
+}
+
+#d4{
+    background-color: fuchsia;
+    width: 33%;
+    height: 500px;
+    display: inline-block;
+}
+*/
+
+/*
+.para{
+    padding-left: 500px;
+    background-color: aqua;
+    width: 700px;
+    padding-top: 200px;
+    padding-right: 500px;
+    margin-left: 100px;
+    width: 600px;
+    height: 200px;
+}
+span{
+    background-color: crimson;
+    padding-top: 400px;
+    padding-left: 200px;
+}
+
+#pr{
+    visibility: hidden;
+    background-color: black;
+}
+
+*/
+
+/*
+01
+#d1{
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+    float: left;
+    position: absolute;
+}
+
+#d2{
+    width: 800px;
+    height: 500px;
+    background-color: aquamarine;
+    float: left;
+    
+}
+*/
+
+/*
+02
+#d1{
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+    float: right;
+}
+
+#d2{
+    width: 800px;
+    height: 500px;
+    background-color: aquamarine;
+    float: left;
+    
+}
+
+*/
+
+
+/*
+06
+#d1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+#d2{
+    width: 800px;
+    height: 500px;
+    background-color: aquamarine;
+    position: absolute;
+}
+
+*/
+
+/*
+07
+#d1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+#d2{
+    width: 800px;
+    height: 500px;
+    background-color: aquamarine;
+    position: absolute;
+}
+
+*/
+
+/*
+Activity 2
+#d2{
+    width: 800px;
+    height: 500px;
+    background-color: aquamarine;
+    position: absolute;
+}
+
+span{
+    background-color: crimson;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+*/
+
+/*
+IJSE GAlle
+#d2{
+    width: 800px;
+    height: 500px;
+    background-color: aquamarine;
+    position: absolute;
+}
+
+span{
+    background-color: crimson;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transform: rotate(45deg);
+}
+*/
+/*
+03
+#d1{
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+    display: inline-block;
+    float: right;
+    padding-top: 30%;
+}
+
+#d2{
+    width: 800px;
+    height: 500px;
+    background-color: aquamarine;
+    float: left;
+    
+*/
+
+h1{
+    color: darkblue;
+    animation-name: anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#imge{
+    width: 100%;
+    height: 500px;
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(../_images/1.jpg)
+    }
+    25%{
+        background-image: url(../_images/2.jpg)
+        /*color: antiquewhite;*/
+    }
+    50%{
+        background-image: url(../_images/3.jpg)
+        /*color: palevioletred;
+        font-size: 20px;*/
+    }
+    75%{
+        background-image: url(../_images/4.jpg)
+        /*color: fuchsia;
+        font-size: 30px;*/
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:540px){
+    h1{
+        color: crimson;
+    }
+}
