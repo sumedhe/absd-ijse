@@ -1,0 +1,45 @@
+h1 {
+	font-family: _________ , _________, __________ ; //Can only use up to 3 fonts
+}
+
+
+Use google fonts to dynamically download fonts when the website opens. 
+http://fontawesome.io/
+
+Typography libraries
+letter.js | lettering.js
+
+Relative values
+em -
+px -
+vw and vh - Percentage of view port (display) 
+
+
+#my_id {
+	font-size : 2em;
+	padding-left: 1em;  //1 em relative to the 2 em above
+}
+
+HTML 5 elements
+<header>
+<nav>
+<aside>
+<article>
+<footer>
+<audio>
+<video>
+
+https://videos.pexels.com/
+https://coverr.co/
+
+CSS rest------------->>>>
+Meyer CSS reset
+normalized reset
+
+CSS frameworkds
+Bootstrap
+Blueprint
+**Sementic UI - Easier than bootstrap
+**Foundation - Larger than bootstrap (Advance)
+52Frameworks - Good documentation
+

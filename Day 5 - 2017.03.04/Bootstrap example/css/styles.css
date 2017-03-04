@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.container{
+	width: 500px;
+}
+
+div.row{
+	width: 400px;
+	margin: 5px;
+}
