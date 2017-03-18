@@ -1,0 +1,4 @@
+PHP is not fully object oriented.
+
+Loosely typed language.
+
