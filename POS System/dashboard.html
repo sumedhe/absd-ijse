@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>POS System</title>
+    <link href="_css/bootstrap.css" rel="stylesheet">
+    <link href="_css/styles.css" rel="stylesheet">
+    <link href="_css/dashboard.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="ribbon-tab" class="container">
+    <ul id="ribbon-switch" class="nav nav-tabs">
+        <li class="active" href="#home-tab" data-toggle="tab">
+            <span><img src="_images/ribbon_icons/home_dark.png"></span>
+            <span>HOME</span>
+        </li>
+        <li href="#purchase-tab" data-toggle="tab">
+            <span><img src="_images/ribbon_icons/purchase_dark.png"></span>
+            <span>PURCHASE</span>
+        </li>
+        <li href="#sales-tab" data-toggle="tab">
+            <span><img src="_images/ribbon_icons/sales_dark.png"></span>
+            <span>SALES</span>
+        </li>
+        <li href="#payments-tab" data-toggle="tab">
+            <span><img src="_images/ribbon_icons/payments_dark.png"></span>
+            <span>PAYMENTS</span>
+        </li>
+        <li href="#inventory-tab" data-toggle="tab">
+            <span><img src="_images/ribbon_icons/inventory_dark.png"></span>
+            <span>INVENTORY</span>
+        </li>
+        <li href="#review-tab" data-toggle="tab">
+            <span><img src="_images/ribbon_icons/review_dark.png"></span>
+            <span>REVIEW</span>
+        </li>
+        <li href="#user-tab" data-toggle="tab">
+            <span><img src="_images/ribbon_icons/user_dark.png"></span>
+            <span>USER</span>
+        </li>
+    </ul>
+
+    <div id="ribbon-content" class="tab-content clearfix">
+        <div class="tab-pane active" id="home-tab">
+            <ul class="tab-pane-content nav nav-pills">
+                <li>
+                    <span><img src="_images/ribbon_icons/suppliers_dark.png"></span>
+                    <span>Suppliers</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/employees_dark.png"></span>
+                    <span>Employees</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/customers_dark.png"></span>
+                    <span>Customers</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/banks_dark.png"></span>
+                    <span>Banks</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="purchase-tab">
+            <ul class="tab-pane-content nav nav-pills">
+                <li>
+                    <span><img src="_images/ribbon_icons/po_dark.png"></span>
+                    <span>Purchase order</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/grn_dark.png"></span>
+                    <span>Good recieve note</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>Purchase return note</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>PO history</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>GRN history</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>PRN history</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="sales-tab">
+            <ul class="tab-pane-content nav nav-pills">
+                <li>
+                    <span><img src="_images/ribbon_icons/sales_dark.png"></span>
+                    <span>Sales order</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/invoice_dark.png"></span>
+                    <span>Invoice</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>Sales return note</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>SO history</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>Invoice history</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>SRN history</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="payments-tab">
+            <ul class="tab-pane-content nav nav-pills">
+                <li>
+                    <span><img src="_images/ribbon_icons/payments_dark.png"></span>
+                    <span>Cash payment</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/cheque_payment_dark.png"></span>
+                    <span>Cheque payment</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/pending_cheques_dark.png"></span>
+                    <span>Pending cheques</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/surcharge_rates_dark.png"></span>
+                    <span>Surcharge rates</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/custom_rates_dark.png"></span>
+                    <span>Custom rates</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="inventory-tab">
+            <ul class="tab-pane-content nav nav-pills">
+                <li>
+                    <span><img src="_images/ribbon_icons/items_dark.png"></span>
+                    <span>Items</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/item_categories_dark.png"></span>
+                    <span>Item categories</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/stock_dark.png"></span>
+                    <span>Stock</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/item_return_reason_dark.png"></span>
+                    <span>Item return reasons</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/suppliers_dark.png"></span>
+                    <span>Return items</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/return_stock_dark.png"></span>
+                    <span>Return stock</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/stock_uploading_dark.png"></span>
+                    <span>Stock uploading</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="review-tab">
+            <ul class="tab-pane-content nav nav-pills">
+                <li>
+                    <span><img src="_images/ribbon_icons/rfq_dark.png"></span>
+                    <span>RFQ</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/customer_summary_dark.png"></span>
+                    <span>Customer summary</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/customer_progress_dark.png"></span>
+                    <span>Customer progress</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/x.png"></span>
+                    <span>Cash book</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/market_analysis_dark.png"></span>
+                    <span>Market analysis</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/profit_loss_statement_dark.png"></span>
+                    <span>Profit/Loss statement</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="user-tab">
+            <ul class="tab-pane-content nav nav-pills">
+                <li>
+                    <span><img src="_images/ribbon_icons/account_dark.png"></span>
+                    <span>Account</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/settings_dark.png"></span>
+                    <span>Settings</span>
+                </li>
+                <li>
+                    <span><img src="_images/ribbon_icons/log_out_dark.png"></span>
+                    <span>Log out</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="tab-switch-bar"></div>
+<div id="tab-content-bar"></div>
+<div id="desktop-pane"></div>
+</body>
+</html>

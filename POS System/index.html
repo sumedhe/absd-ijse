@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>POS System</title>
+    <link href="_css/bootstrap.css" rel="stylesheet">
+    <link href="_css/styles.css" rel="stylesheet">
+    <link href="_css/index.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="login-box" class="container">
+    <ul class="nav nav-tabs tab-change">
+        <li class="active" id="sign-up-button"><a id="sign-up-item" href="#sign-up-tab" data-toggle="tab">Sign up</a></li>
+        <li id="sign-in-button"><a id="sign-in-item" href="#sign-in-tab" data-toggle="tab">Sign in</a></li>
+    </ul>
+
+    <div class="tab-content clearfix">
+        <div class="tab-pane active" id="sign-up-tab">
+            <form>
+                <div>
+                    <div class="tab-content-label">Full name</div>
+                    <div><input class="form-control tab-content-text" type="text" name="" value=""></div>
+                </div>
+                <div>
+                    <div class="tab-content-label">Email</div>
+                    <div><input class="form-control tab-content-text" type="text" name="" value=""></div>
+                </div>
+                <div>
+                    <div class="tab-content-label">Password</div>
+                    <div><input class="form-control tab-content-text" type="password" value=""></div>
+                </div>
+                <div>
+                    <div><input onclick="window.location.href='./dashboard.html'"
+                                class="btn btn-default tab-content-button"
+                                type="button" value="Sign up"></div>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane" id="sign-in-tab">
+            <form>
+                <div>
+                    <img id="user-profile-img" src="_images/default-profile.png">
+                </div>
+                <div>
+                    <div class="tab-content-label">Email</div>
+                    <div><input class="form-control tab-content-text" type="text" name="" value=""></div>
+                </div>
+                <div>
+                    <div class="tab-content-label">Password</div>
+                    <div><input class="form-control tab-content-text" type="password" value=""></div>
+                </div>
+                <div>
+                    <div><input onclick="window.location.href='./dashboard.html'"
+                                class="btn btn-default tab-content-button"
+                                type="button" value="Sign in"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("sign-in-button").click();
+</script>
+</body>
+</html>

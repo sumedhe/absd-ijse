@@ -1,0 +1,82 @@
+:root {
+    --color-white: #ffffff;
+    --color-medium: #246B65;
+    --color-v-light: #8BB4B1;
+    --color-light: #4E8B87;
+    --color-dark: #0A4D48;
+    --color-v-dark: #002D2A;
+    --color-black: #000000;
+}
+
+html, body{
+    background-color: var(--color-medium);
+}
+
+#login-box {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    width: 300px;
+    height: 350px;
+    padding: 5px;
+    margin: 10% auto 0;
+    border: 1px solid var(--color-white);
+}
+
+.tab-change {
+    background-color: var(--color-dark);
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#sign-up-button, #sign-in-button{
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#sign-up-item, #sign-in-item{
+    background-color: var(--color-v-dark);
+    color: var(--color-white);
+    border-radius: 0;
+}
+
+#sign-up-item:hover, #sign-in-item:hover {
+    background-color: var(--color-medium);
+    color: var(--color-white);
+}
+
+.tab-content {
+    background-color: var(--color-dark);
+    margin: 10px;
+    height: 260px;
+    padding: 5px;
+}
+
+#user-profile-img{
+    margin: 10px 40% auto;
+    height: 60px;
+}
+
+.tab-content-label{
+    color: var(--color-white);
+    margin: 3px;
+}
+
+.tab-content-text{
+    background-color: var(--color-v-dark);
+    color: var(--color-white);
+}
+
+.tab-content-button{
+    background-color: var(--color-v-dark);
+    color: var(--color-white);
+    width: 50%;
+    margin: 20px 25% 0;
+}
+
+.tab-content-button:hover{
+    background-color: var(--color-medium);
+    color: var(--color-white);
+}
+

@@ -1,0 +1,63 @@
+:root {
+    --color-white: #ffffff;
+    --color-medium: #246B65;
+    --color-v-light: #8BB4B1;
+    --color-light: #4E8B87;
+    --color-dark: #0A4D48;
+    --color-v-dark: #002D2A;
+    --color-black: #000000;
+}
+
+html, body {
+    background-color: var(--color-v-light);
+}
+
+#ribbon-tab {
+    height: 100px;
+    background-color: var(--color-medium);
+}
+
+#ribbon-switch {
+    background-color: var(--color-light);
+}
+
+#ribbon-switch li {
+    background-color: var(--color-v-dark);
+    color: var(--color-white);
+    margin: 5px 2px;
+    width: 150px;
+    height: 40px;
+    padding: 0px 0px;
+    cursor: default;
+}
+
+#ribbon-switch li:hover{
+    background-color: var(--color-light);
+    color: var(--color-black);
+}
+
+#ribbon-switch li span img{
+    height: 40px;
+}
+
+#ribbon-content li {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    cursor: default;
+}
+
+#ribbon-content li:hover {
+    background-color: var(--color-light);
+    color: var(--color-black);
+}
+
+#ribbon-content li span img{
+    height: 30px;
+}
+
+
+
