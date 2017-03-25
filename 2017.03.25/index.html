@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript DOM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
+<!--        <script type="text/javascript" src="_js/script1.js"> </script>-->
+        <script type="text/javascript" src="_js/jquery-3.2.0.js"> </script>
+    </head>
+    
+    <body>
+<!--
+        <script type="text/javascript">
+            function repeteInvoking(){
+                document.write("Some random text" + "<br>");
+            }
+            
+            setInterval(repeteInvoking, 1000);
+        </script>          
+-->
+        
+<!--
+        <script type="text/javascript">
+            function invokeLater(){
+                document.write("Some random text");
+            }
+            
+            var bomb = setTimeout(invokeLater, 3000);
+            
+            clearTimeout(bomb);
+        </script>
+-->
+        
+        <script>
+            var colorIndex = 0;
+            var colors = ["blue", "green", "red", "white", "yellow"];
+                
+            function changeColor(){
+//                document.body.style.backgroundColor = colors[colorIndex];
+                $("body").css("background-color", colors[colorIndex])
+
+                if(colorIndex == colors.length){
+                    colorIndex = 0
+                }else{
+                    colorIndex++;
+                }
+            }
+            
+            setInterval(changeColor, 500);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript DOM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
+<!--        <script type="text/javascript" src="_js/script1.js"> </script>-->
+        <script type="text/javascript" src="_js/jquery-3.2.0.js"> </script>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            var names = ["Oshan", "Pramodya", "Jinadi", "Manasha", "Sandali"];
+            console.log("Original array: " + names);
+            console.log("length: " + names.length);
+            names.push("Someone else");
+            console.log("push: " + names);
+            names.pop();
+            console.log("pop: " + names);
+            console.log("unshift: " + names.unshift(20));
+            console.log("indexof Jinadi: " + names.indexOf("Jinadi"));
+            console.log("Array: " + names);
+            console.log("slice: " + names.slice(1, names.length));
+            console.log("reverse: " + names.reverse());
+            
+            
+            document.write("Array operations");
+        </script> 
+    </body>
+</html>

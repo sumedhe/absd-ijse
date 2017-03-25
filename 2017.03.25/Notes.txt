@@ -1,0 +1,27 @@
+There are 5 primitive types in JavaScript
+Boolean
+String 
+Number
+Null
+Undefined
+
+Wrappers are implemented for 3 primitive types
+Boolean
+String 
+Number
+
+
+String wrapper
+charAt
+charCodeAt
+indexOf
+toLowerCase
+toUpperCase
+trimLeft
+trimRight
+
+
+
+https://github.com/MikeMcl/big.js/
+
+

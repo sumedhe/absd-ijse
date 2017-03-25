@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript DOM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
+<!--        <link rel="stylesheet" type="text/css" href="_css/style.css">-->
+<!--        <script type="text/javascript" src="_js/script1.js"> </script>-->
+        <script type="text/javascript" src="_js/jquery-3.2.0.js"> </script>
+        <script type="text/javascript" src="_js/big.js"> </script>
+    </head>
+    
+    <body>
+        <h1>EcmaScript 5 Object literal</h1>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td id="txtName"></td>
+            </tr>
+            <tr>
+                <td>NIC</td>
+                <td id="txtNic"></td>
+            </tr>
+            <tr>
+                <td>Marks</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td>Marks</td>
+            </tr>
+            <tr>
+                <td>FrontEnd</td>
+                <td id="txtFrontEnd"></td>
+            </tr>
+            <tr>
+                <td>BackEnd</td>
+                <td id="txtBackEnd"></td>
+            </tr>
+            <tr class="headers">
+                <td>Total marks</td>
+                <td id="txtTotalMarks"></td>
+            </tr>
+            <tr class="headers">
+                <td>Average</td>
+                <td id="txtAverage"></td>
+            </tr>
+            
+        </table>
+        <button id="btnLoadDetails" type="button">Load details</button>
+        
+        <script type="text/javascript">
+//            var myNumber = new Number(3.12567657567);
+//            console.log("myNumber: " + myNumber);
+//            
+//            console.log("isNumber (global): " + isNaN(myNumber));
+//            console.log("isNumber (Number): " + Number.isNaN(myNumber));
+//            
+//            console.log("isNumber (global): " + isNaN("cat"));
+//            console.log("isNumber (Number): " + Number.isNaN("cat"));
+//            
+//            console.log("toExponential: " + myNumber.toExponential());
+//            console.log("toFixed: " + myNumber.toFixed(4));
+//            console.log("toPrecision: " + myNumber.toPrecision(4));
+            
+//            var myNumber = 0.3 - 0.2;
+//            var myBig3 = new Big(0.3);
+//            var myBig2 = new Big(0.2);
+//            var myBigNumber = myBig3.minus(myBig2);
+//            console.log("myNumber: " + myNumber);
+//            console.log("myBigNumber: " + myBigNumber);
+            
+//            var myNumber = 2.523 * 4.2;
+//            var myBig3 = new Big(2.523);
+//            var myBig2 = new Big(4.2);
+//            var myBigNumber = myBig3.times(myBig2);
+//            console.log("myNumber: " + myNumber);
+//            console.log("myBigNumber: " + myBigNumber);
+//            console.log("myBigNumber, precision 4: " + myBigNumber.toPrecision(4));
+            
+//            Object literal
+//            var myObject = {
+//                testProperty1 : "This is the test property 1",
+//                testProperty2 : 10, 
+//                testMethod : function(){
+//                    document.write("This is a test method");
+//                }
+//            };
+//            console.log(myObject);
+//            myObject.testMethod();
+            
+            var mona = {
+                name : "Manasha",
+                nic : "948302802V",
+                marksFontEnd : 22,
+                marksBackEnd : 17,
+                
+                isFrontEndPassed: function(){
+                    if(marksFontEnd >= 50){
+                        document.write("FrontEnd - Passed");
+                    }else{
+                        document.write("FrontEnd - Failed");
+                    }
+                },
+            
+                isBackEndPassed: function(){
+                    if(marksBackEnd >= 50){
+                        document.write("BackEnd - Passed");
+                    }else{
+                        document.write("BackEnd - Failed");
+                    }
+                },
+                
+                printDetails: function(){
+                    $("#txtName").text(this.name);
+                    $("#txtNic").text(this.nic);
+                    $("#txtFrontEnd").text(this.marksFontEnd);
+                    $("#txtBackEnd").text(this.marksBackEnd);
+                    $("#txtTotalMarks").text(this.marksFontEnd + this.marksBackEnd);
+                    $("#txtAverage").text((this.marksFontEnd + this.marksBackEnd) / 2);
+                }
+            };
+            
+            mona.age = 15;
+            mona.school = "UCSC";
+            mona.printSchool = function(){
+//                Object school is called
+                alert(this.school);
+            }
+            
+//            delete mona.age;
+            
+            var flag = ("age" in mona);
+            console.log("Does mona have an age: " + flag);
+            
+            mona.printAge = printAge;
+            
+            function printAge(){
+                alert(this.age);
+            }
+            
+            $("#btnLoadDetails").click(load_details);
+            
+            function load_details(){
+                mona.printDetails();
+            }
+            
+        </script> 
+    </body>
+</html>
