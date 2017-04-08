@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+.div-cols{
+    padding:30px !important;
+}
+
+form div:last-child{
+    text-align:center;
+}
+
+table th:first-child{
+    width:10%;
+}
+
+tbody tr{
+    cursor:pointer;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EcmaScript 5 Object Literal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <h1>EcmaScript 5 Object Literal</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <form id="frmStudentDetails">
+                        <p class="form-group">
+                            <label>
+                                Name
+                                <input id="txtName" class="form-control" type="text" name="txtName" />
+                            </label>
+                        </p>
+                        <p class="form-group">
+                            <label>
+                                NIC
+                                <input id="txtNIC" class="form-control" type="text" name="txtNIC" />
+                            </label>  
+                        </p>
+                        <p class="form-group">
+                            <label>
+                                Front End Marks
+                                <input id="txtFrontEndMarks" class="form-control" type="text" name="txtFrontEndMarks" />
+                            </label>  
+                        </p>
+                        <p class="form-group">
+                            <label>
+                                Back End Marks
+                                <input id="txtBackEndMarks" class="form-control" type="text" name="txtBackEndMarks" />
+                            </label>  
+                        </p>  
+                        <p>
+                            <button id="btnShowDetails" class="btn btn-primary" type="button">Show Details</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <table id="main-table">
+                        <tr>
+                            <td>Name</td>
+                            <td id="dName"></td>
+                        </tr>
+                        <tr>
+                            <td>NIC</td>
+                            <td id="dNIC"></td>
+                        </tr> 
+                        <tr>
+                            <td>Front End Marks</td>
+                            <td >
+                                <table>
+                                    <tr>
+                                        <td id="dFrontEndMarks"> - </td>
+                                        <td id="dFontEndStatus"> - </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>Back End Marks</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td id="dBackEndMarks"> - </td>
+                                        <td id="dBackEndStatus"> - </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>Total Marks</td>
+                            <td id="dTotalMarks"></td>
+                        </tr>
+                        <tr>
+                            <td>Avg. Marks</td>
+                            <td id="dAvgMarks"></td>
+                        </tr>                        
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/objliteral.js"></script>
+    </body>
+</html>

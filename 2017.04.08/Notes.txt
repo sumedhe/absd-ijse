@@ -1,0 +1,48 @@
+Return true
+	Object
+	Non empty string
+	Non-Zero
+	true
+
+Return false
+	Undefined
+	Null
+	Zero
+	Empty string
+	false
+
+
+Frames are not used much because they are blocked in most broswers by default due to security settings.
+
+"instanceof Array" vs "Array.isArray"
+
+Regular expressions
+
+var exp = new RegExp('pattern', flags)
+var exp = / pattern / flags
+
+g = global match; don't stop after first match
+i = ignore case
+m = multiline
+
+RegExp.test(String) = Match and return true or false
+String.match(RegExp) = Match and returns an object
+
+Javascript objects has only properties. No methods. 
+
+
+Execution context
+
+Dot notation vs bracket notation
+. vs []
+Can use both to access properties in objects
+myObj.name
+myObj["name"]
+
+Call a property
+myObj["printDetails"]();
+
+Check if a property is in object
+"My name" in myObj;
+
+Objects > properties > Attributes

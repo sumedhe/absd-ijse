@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Frame1</title>
+</head>
+<body>
+<h2>
+    One cool thing of frames is that they can exchange resources between each other
+</h2>
+<div id="output" class="alert alert-info">
+
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    var message = window.parent.message;
+    $("#output").append(message + "</br>");
+</script>
+</body>
+</html>
