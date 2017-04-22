@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1. RegExp-1/1. RegExp-1.iml" filepath="$PROJECT_DIR$/1. RegExp-1/1. RegExp-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. RegExp-2/2. RegExp-2.iml" filepath="$PROJECT_DIR$/2. RegExp-2/2. RegExp-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3. Object &amp; Functions/3. Object &amp; Functions.iml" filepath="$PROJECT_DIR$/3. Object &amp; Functions/3. Object &amp; Functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4. Accessor Properties/4. Accessor Properties.iml" filepath="$PROJECT_DIR$/4. Accessor Properties/4. Accessor Properties.iml" />
+    </modules>
+  </component>
+</project>

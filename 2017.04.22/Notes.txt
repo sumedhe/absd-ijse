@@ -1,0 +1,10 @@
+Map reduce
+
+Hadoop
+Apache Spark
+
+WBS - Work Breakdown Structure
+
+Safety fact
+	eg - Work 8 hours and take worked time as 6 hours
+

@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:verdana,arial,sans-serif;
+}
+
+#divMain{
+    position: fixed;
+    width:540px;
+    height:540px; 
+    left:50%;
+    top:50%;    
+    margin-top: -261px;
+    margin-left: -261px;
+}
+
+#divNums{
+    position: absolute;
+}
+
+#divContainer{
+    position: relative;
+    left:20px;
+    font-size:0px; 
+    width:520px;
+    border:1px solid green;
+}
+
+#divChars{
+    position: relative;
+    margin-top: 2px;
+    margin-left:20px;
+}
+
+#divFooter{
+    position: fixed;
+    bottom:5px;
+    width:100%;
+    text-align: center;
+    z-index: -1;
+    -moz-animation: txtAnimation 5s;
+    -moz-animation-iteration-count: infinite;        
+    -webkit-animation: txtAnimation 5s;
+    -webkit-animation-iteration-count: infinite;    
+    animation: txtAnimation 5s;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes txtAnimation{
+    0% {color:red}
+    50% {color:blue}
+    100%{color:green}
+}
+
+@-webkit-keyframes txtAnimation{
+    0% {color:red}
+    50% {color:blue}
+    100%{color:green}
+}
+
+
+@keyframes txtAnimation{
+    0% {color:red}
+    50% {color:blue}
+    100%{color:green}
+}
+
+.box{
+    position: relative;
+    display:inline-block;
+    width:65px;
+    height:65px;
+}
+
+.box:hover{
+    box-shadow: inset 0px 0px 6px 2px #0000ff; 
+}
+
+.whiteBox{
+    background-color:rgb(236,233,217);
+}
+
+.blackBox{
+    background-color:rgb(206,203,150);
+}
+
+.colorOwnBox{ 
+    -webkit-box-shadow: inset 0px 0px 6px 2px #0099cc; 
+    -moz-box-shadow: inset 0px 0px 6px 2px #0099cc;
+    box-shadow: inset 0px 0px 6px 2px #0099cc; 
+    background: -webkit-linear-gradient( rgba(0,0,255,0), rgba(0,255,0,1));
+    background: -moz-linear-gradient( rgba(0,0,255,0), rgba(0,255,0,1));
+    background: -o-linear-gradient( rgba(0,0,255,0), rgba(0,255,0,1));
+    background: linear-gradient( rgba(0,0,255,0), rgba(0,255,0,1));
+}
+
+.higlightedBoxes{
+    -webkit-box-shadow: inset 0px 0px 6px 1px #3399ff; 
+    -moz-box-shadow: inset 0px 0px 6px 1px #3399ff;
+    box-shadow: inset 0px 0px 6px 1px #3399ff; 
+
+    background: -webkit-radial-gradient( rgba(0,255,0,1) , rgba(0,0,225,0));
+    background: -moz-radial-gradient( rgba(0,255,0,1) , rgba(0,0,225,0));
+    background: -o-radial-gradient( rgba(0,255,0,1) , rgba(0,0,225,0));
+    background: radial-gradient( rgba(0,255,0,1) , rgba(0,0,225,0));
+}
+
+.enemyBoxes{
+    box-shadow: inset 0px 0px 6px 1px red;   
+
+    background: -webkit-radial-gradient(  rgba(255,0,0,1) , rgba(255,0,0,0));
+    background: -moz-radial-gradient( rgba(255,0,0,1) , rgba(255,0,0,0));
+    background: -o-radial-gradient( rgba(255,0,0,1) , rgba(255,0,0,0));
+    background: radial-gradient( rgba(255,0,0,1) , rgba(255,0,0,0)); 
+
+}
+
+.chessSymbols{
+    position: absolute;
+    font-size:36pt;
+    width:100%;
+    text-align: center;
+    cursor: pointer;
+    z-index:1;
+}
