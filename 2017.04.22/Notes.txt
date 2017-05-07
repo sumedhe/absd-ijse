@@ -8,3 +8,19 @@ WBS - Work Breakdown Structure
 Safety fact
 	eg - Work 8 hours and take worked time as 6 hours
 
+Retrospective meeting
+
+Almost everything in JavaScript are objects
+
+Execution context
+
+JS engine hoist functions
+
+When nev execution is created -> New object variable is created 
+This contains (....)
+	1) var declerations
+	2) Methods
+	3) Arguements
+
+Javascript . notation and [] notation
+
