@@ -13,12 +13,9 @@
     </head>
     <body>
         <form action="A">
-            Name <input type="text" name="name">
-            </br>
-            Telephone <input type="text" name="telephone">
-            </br>
-            Email <input type="email" name="email">
-            </br>
+            Name <input type="text" name="name"></br>
+            Telephone <input type="text" name="telephone"></br>
+            Email <input type="email" name="email"></br>
             <input type="submit">
         </form>
     </body>

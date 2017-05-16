@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Oshan
  */
-public class A extends HttpServlet {
+public class ViewServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,23 +37,16 @@ public class A extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String name = request.getParameter("name");
-            String telephone = request.getParameter("telephone");
-            String email = request.getParameter("email");
-            
             File theFile = new File("E:\\the_file.txt");
             theFile.createNewFile();
-            
+
             FileReader fileReader = new FileReader(theFile);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            FileWriter fileWriter = new FileWriter(theFile, true);
-            PrintWriter writer = new PrintWriter(fileWriter);
-            
-            List<String> lines = new ArrayList<>();
-            
-            writer.println(String.valueOf(bufferedReader.lines().count() + 1) + " - " + 
-                    name + " - " + telephone + " - " + email);
-            writer.close();
+
+            for(Object o: bufferedReader.lines().toArray()){
+                out.print(o);
+                out.print("<br>");
+            }
         }
     }
 

@@ -9,3 +9,19 @@ namalyas@gmail.com
 
 ------------------Web
 
+Common attributes
+	enumarable, configurable
+
+Object.getOwnPropertyDesciptor
+
+
+*Make a note
+	Data properties / Accessor properties
+	Attributes
+		Common
+		Data property attributes
+		Accesor property attributes
+	Object modification
+		Extension
+		Sealing
+		Freezing

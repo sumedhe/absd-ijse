@@ -5,14 +5,10 @@
  */
 package web;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Oshan
  */
-public class A extends HttpServlet {
+public class AddServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,22 +33,16 @@ public class A extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String name = request.getParameter("name");
             String telephone = request.getParameter("telephone");
-            String email = request.getParameter("email");
-            
+            String name = request.getParameter("name");
+
             File theFile = new File("E:\\the_file.txt");
             theFile.createNewFile();
-            
-            FileReader fileReader = new FileReader(theFile);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+
             FileWriter fileWriter = new FileWriter(theFile, true);
             PrintWriter writer = new PrintWriter(fileWriter);
-            
-            List<String> lines = new ArrayList<>();
-            
-            writer.println(String.valueOf(bufferedReader.lines().count() + 1) + " - " + 
-                    name + " - " + telephone + " - " + email);
+
+            writer.println(telephone + " - " + name);
             writer.close();
         }
     }

@@ -11,8 +11,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Oshan
  */
-public class A extends HttpServlet {
+public class DeleteServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,23 +35,45 @@ public class A extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String name = request.getParameter("name");
             String telephone = request.getParameter("telephone");
-            String email = request.getParameter("email");
-            
+
             File theFile = new File("E:\\the_file.txt");
             theFile.createNewFile();
-            
+            File tempFile = new File("E:\\temp_file.txt");
+            tempFile.delete();
+            tempFile.createNewFile();
+
             FileReader fileReader = new FileReader(theFile);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            FileWriter fileWriter = new FileWriter(theFile, true);
+            FileWriter fileWriter = new FileWriter(tempFile, true);
             PrintWriter writer = new PrintWriter(fileWriter);
+
+            boolean notFound = true;
+            for(Object o: bufferedReader.lines().toArray()){
+                String line = (String) o;
+                String[] parts = line.split("-");
+                if(parts[0].trim().equals(telephone)){
+                    notFound = false;
+                }else{
+                    writer.println(line);
+                }
+            }
             
-            List<String> lines = new ArrayList<>();
+            if(notFound){
+                out.print("The person with the telephone number, " + telephone + " is not found");
+            }else{
+                out.print("The person with the telephone number, " + telephone + " is successfully deleted");
+            }
             
-            writer.println(String.valueOf(bufferedReader.lines().count() + 1) + " - " + 
-                    name + " - " + telephone + " - " + email);
+            writer.flush();
+            
+            fileReader.close();
+            bufferedReader.close();
+            fileWriter.close();
             writer.close();
+            
+            theFile.delete();
+            tempFile.renameTo(new File("E:\\the_file.txt"));
         }
     }
 

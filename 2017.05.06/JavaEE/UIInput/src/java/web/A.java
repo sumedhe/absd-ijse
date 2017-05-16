@@ -43,10 +43,25 @@ public class A extends HttpServlet {
 
             Preferences pref = Preferences.systemNodeForPackage(this.getClass());
             String name = request.getParameter("name");
-            String chain = pref.get("VAL", "");
-            chain += "</br>" + name;
-            pref.put("VAL", chain);
+            String chain = pref.get("BOX", "");
+            chain += "<br>" + name;
+            
+            String[] names = chain.split("<br>");
+            int size = names.length;
+            
+            int noOfPages = size / 5;
+            if(0 != (size % 5)){
+                noOfPages++;
+            }
+            
+            pref.put("BOX", chain);
             out.print(chain);
+            
+            out.print("<br>");
+            for(int i = 0; i < noOfPages; i++){
+                out.print((i + 1) + " | ");
+            }
+            
             out.close();
         }
     }

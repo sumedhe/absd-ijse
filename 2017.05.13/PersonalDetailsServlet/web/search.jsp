@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : May 6, 2017, 12:27:31 PM
+    Document   : search
+    Created on : May 13, 2017, 9:11:36 AM
     Author     : Oshan
 --%>
 
@@ -9,13 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Search</title>
     </head>
     <body>
-        <form action="A">
+        <form action="SearchServlet">
             Name <input type="text" name="name"></br>
-            Telephone <input type="text" name="telephone"></br>
-            Email <input type="email" name="email"></br>
             <input type="submit">
         </form>
     </body>
