@@ -1,0 +1,17 @@
+[
+  {
+    "name":"Nimal",
+    "age":15,
+    "location":"Panadura"
+  },
+  {
+    "name":"Kamal",
+    "age":17,
+    "location":"Panadura"
+  },
+  {
+    "name":"Sunil",
+    "age":19,
+    "location":"Panadura"
+  }
+]
