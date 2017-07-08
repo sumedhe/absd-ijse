@@ -1,0 +1,28 @@
+Expression Language
+JSTL - Java Standard Tag Libraries
+
+Variable attribute scopes (Servlet)
+	Request
+	HTTP context
+	Servlet context
+
+JSP scopes
+	[Above 3]
+	page scope
+
+
+
+Homework
+	A2 paper - 4th chapter of HF Servlets
+
+	Department System (Any technology)
+		3 levels
+			Manager				- 1
+			Department head		- 1 per each
+			Employees
+		Leaves
+			Leave only for 'future dates'
+			Leave has to be approved by department head -> Then approved by Manager (Employee)
+			Leave has to be approved by Manager (Department head) 
+			Leave status table
+		Interface like the old system
