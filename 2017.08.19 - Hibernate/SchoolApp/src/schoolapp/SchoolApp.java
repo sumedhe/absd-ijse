@@ -7,6 +7,7 @@ package schoolapp;
 
 import model.Bag;
 import model.Student;
+import model.Subject;
 import model.Teacher;
 import org.hibernate.Session;
 import util.HibernateUtil;
@@ -28,18 +29,23 @@ public class SchoolApp {
         Bag bag = new Bag();
         bag.setBagColor("Green");
         
-        Student student = new Student();
-        student.setStudentName("Oshan");
-        student.setBag(bag);
+        Student s1 = new Student();
+        s1.setStudentName("Oshan");
+        s1.setBag(bag);
         
         Student s2 = new Student();
         s2.setStudentName("No one");
         
         Teacher teacher = new Teacher();
         teacher.setTeacherName("A");
-        teacher.getStudents().add(student);
+        teacher.getStudents().add(s1);
         teacher.getStudents().add(s2);
-
+        
+        Subject sub1 = new Subject();
+        sub1.setSubjectName("Maths");
+        
+        Subject sub2 = new Subject();
+        sub2.setSubjectName("Science");
         
         session.save(teacher);
         

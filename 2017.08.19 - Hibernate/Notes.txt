@@ -1,0 +1,6 @@
+Homework:
+
+Library system (Command line + Hibernate)
+	Member
+	Book
+	Transaction
