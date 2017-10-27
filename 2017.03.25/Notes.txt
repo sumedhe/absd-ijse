@@ -20,7 +20,7 @@ toUpperCase
 trimLeft
 trimRight
 
-
+This is bullshit
 
 https://github.com/MikeMcl/big.js/
 
