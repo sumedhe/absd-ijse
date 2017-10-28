@@ -33,13 +33,12 @@
         
         <script>
             var colorIndex = 0;
-            var colors = ["blue", "green", "red", "white", "yellow"];
+            var colors = ["blue", "green", "red", "white", "yellow", "black", "pink"];
                 
             function changeColor(){
-//                document.body.style.backgroundColor = colors[colorIndex];
                 $("body").css("background-color", colors[colorIndex])
 
-                if(colorIndex == colors.length){
+                if(colorIndex == colors.length - 1){
                     colorIndex = 0
                 }else{
                     colorIndex++;
