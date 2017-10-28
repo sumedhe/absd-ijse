@@ -17,10 +17,13 @@ public class Multiplier {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // Create scanner
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter a number between -1000 and 1000 : ");
         try {
+            // Get user input
             int n = scanner.nextInt();
+            // Check whether the input number is between -1000 and 1000 or not
             if (n > 1000 && n < -1000) {
                 System.out.println("Incorrect number format. The number should be between -1000 and 1000");
             } else {
@@ -28,6 +31,7 @@ public class Multiplier {
                 System.out.println("");
             }
         } catch (Exception ex) {
+            // Show error
             System.out.println("Incorrect number format");
         }
     }
